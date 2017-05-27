@@ -20,7 +20,7 @@ function LooseContentInjector(injectorName, injectionInterval_ms) {
         this.isLoadedCheck = null;
 
         this.failures = 0;
-        this.failureLimit = 100;
+        this.failureLimit = 250;
         this.lastError = null;
 
         this.isFailed = function(){ return instance.failures >= instance.failureLimit; };
